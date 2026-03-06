@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <form action="#" method="post"></form>
+        <fieldset>
+          <h1>회원가입</h1>
+          <p style="display: inline-flex; background-color: blue; color: white">
+            필수항목
+          </p>
+          <div>
+            <label for="ID">아이디</label> <br />
+            <input type="text" name="ID" />
+          </div>
+          <div>
+            <label for="PW">비밀번호</label> <br />
+            <input type="password" name="PW" />
+          </div>
+          <div>
+            <label for="email">email</label> <br />
+            <input type="email" name="email" placeholder="example@email.com" />
+          </div>
+          <div>
+            <label for="name">이름</label> <br />
+            <input type="text" name="name" placeholder="홍길동" />
+          </div>
+          <div>
+            <label for="age">나이</label> <br />
+            <input type="text" name="age" />
+          </div>
+          <p style="display: inline-flex; background-color: blue; color: white">
+            당신에 대해 알고 싶어요!
+          </p>
+          <div>
+            <label for="habit">당신의 취미를 선택해주세요</label> <br />
+            <input type="radio" name="habit" value="게임" /><span
+              >게임하기</span
+            >
+            <input type="radio" name="habit" value="음악" /><span
+              >음악듣기</span
+            >
+            <input type="radio" name="habit" value="아이스 음료" /><span
+              >아이스 음료 마시기</span
+            >
+          </div>
+          <div>
+            <label for="drink"
+              >좋아하는 음료를 선택해주세요.(중복선택가능)</label
+            >
+            <br />
+            <input type="checkbox" name="dirnk" value="쉐이크" /><span
+              >쉐이크 종류 음료</span
+            >
+            <input type="checkbox" name="dirnk" value="티" /><span
+              >티 종류 음료</span
+            >
+            <input type="checkbox" name="dirnk" value="커피" /><span
+              >커피 종류 음료</span
+            >
+          </div>
+          <div>
+            <label for="date">동아리 참석 가능 날짜</label>
+            <input type="date" name="date" />
+          </div>
+          <div>
+            <label for="coffee">얼.죽.아에서 참여하고 싶은 모임은?:</label>
+            <select name="coffe">
+              <option value="선택">--선택해주세요--</option>
+              <option value="아아">아아</option>
+              <option value="아아">아아</option>
+            </select>
+          </div>
+          <p>포트폴리오 제출하기</p>
+          <div>
+            <label for="upload">업로드하기</label>
+            <input type="file" name="upload" />
+          </div>
+          <div>
+            <label for="last">마지막으로 하고 싶은 말은?</label> <br />
+            <textarea name="last" cols="50" rows="20"></textarea>
+          </div>
+          <p style="display: inline-flex; background-color: gray; color: white">
+            다시쓰기
+          </p>
+          <p style="display: inline-flex; background-color: blue; color: white">
+            제출하기
+          </p>
+        </fieldset>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
