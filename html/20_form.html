@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입폼</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <a href="#field2">기타항목 입력</a>
+
+    <form action="#" method="get">
+      <!--method : post/get -->
+      <!-- GET : 서버에 데이터 전송 방식으로 URL을 사용함, Query String(쿼리스트링) 
+       네트웍 패킷의 헤더에 함께 전송-->
+      <!-- POST : 서버에 데이터 전송 시 네트웍 패킷의 바디에 함께 전송 -->
+      <!-- method 안 쓰면 디폴트는 GET 방식 -->
+      <fieldset>
+        <legend>개인 정보 입력</legend>
+        <ul>
+          <li>
+            <label for="name">ID</label>
+            <input type="text" name="ID" />
+          </li>
+          <li>
+            <label for="name">PW</label>
+            <input type="password" name="PW" />
+          </li>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" name="name" />
+          </li>
+          <fieldset>
+            <legend>주소 선택 태그</legend>
+            <li>
+              <label for="address1">주소1</label>
+              <input type="text" name="address1" />
+            </li>
+            <li>
+              <label for="address2">주소2</label>
+              <input type="radio" name="address2" value="서울시" /><span
+                >서울시</span
+              >
+              <input type="radio" name="address2" value="인천시" /><span
+                >인천시</span
+              >
+              <input type="radio" name="address2" value="부산시" /><span
+                >부산시</span
+              >
+              <!-- name="address2"가 만약 3 4 이렇게 되면 3개 다 선택 가능해짐 -->
+            </li>
+            <li>
+              <label for="address3">주소3</label>
+              <input type="checkbox" name="address3" value="서울시" /><span
+                >서울시</span
+              >
+              <input type="checkbox" name="address3" value="인천시" /><span
+                >인천시</span
+              >
+              <input type="checkbox" name="address3" value="부산시" /><span
+                >부산시</span
+              >
+            </li>
+            <li>
+              <label for="address4">주소4</label>
+              <select name="address4" id="">
+                <option value="선택">선택하세요</option>
+                <option value="서울시">서울시</option>
+                <option value="서울시">인천시</option>
+                <option value="서울시">부산시</option>
+              </select>
+            </li>
+          </fieldset>
+
+          <li>
+            <label for="birthday">생년월일</label>
+            <input type="date" name="birthday" />
+          </li>
+          <li>
+            <label for="photo">프로필사진업로드</label>
+            <input type="file" name="photo" />
+          </li>
+          <li>
+            <label for="intro">자기소개</label>
+            <textarea
+              name="intro"
+              cols="50"
+              rows="10"
+              placeholder="100자 이내로 작성해주세요"
+            ></textarea>
+          </li>
+
+          <li>
+            <button type="submit">전송</button>
+            <!-- default : submit -->
+            <button type="button">전송(이벤트X)</button>
+            <button type="reset">다시쓰기</button>
+            <!-- 버튼의 종류는 3가지
+            button은 자바스크립트를 통해 조건을 걸어 보내거나 안 보내거나 할 수 있음
+            submit은 무조건 데이터를 전송하기 때문에  -->
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset id="fiedl2"><legend>기타 항목 입력</legend></fieldset>
+    </form>
+  </body>
+</html>
