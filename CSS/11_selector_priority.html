@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Priority</title>
+    <meta name="description" content="Selector Priority" />
+    <style>
+      /* 가장 높은건 important
+      all(*) > element(HTML Tag) > class, pseudo, attribute > id > inline-style > !important
+      */
+      * {
+        background-color: silver;
+      }
+      h1 {
+        background-color: aquamarine;
+      }
+      div {
+        background-color: tomato;
+      }
+      p {
+        background-color: yellow;
+      }
+      #p1 {
+        color: red;
+      }
+      .p2 {
+        color: green !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Selector Priority</h1>
+    <div>
+      <p id="p1" class="p2" style="color: blue">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        corporis deleniti minima, dolores iste recusandae minus ratione
+        provident? Suscipit, minus veniam. Sint natus atque molestiae accusamus,
+        nobis quidem aliquid facere.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        corporis deleniti minima, dolores iste recusandae minus ratione
+        provident? Suscipit, minus veniam. Sint natus atque molestiae accusamus,
+        nobis quidem aliquid facere.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+        corporis deleniti minima, dolores iste recusandae minus ratione
+        provident? Suscipit, minus veniam. Sint natus atque molestiae accusamus,
+        nobis quidem aliquid facere.
+      </p>
+    </div>
+  </body>
+</html>
