@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Layout Style</title>
+    <meta name="description" content="Display Layout Style" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        margin: 0;
+      }
+      .d1 p {
+        margin: 0;
+        display: inline-block;
+        width: 200px;
+        height: 250px;
+        background-color: aquamarine;
+      }
+      .d2 > div {
+        border: 1px solid blue;
+        display: flex;
+        gap: 20px;
+        /* align-items: center; */
+        /* 메뉴 만들 때 사용됨 */
+        justify-content: space-between;
+      }
+      .d2 p {
+        background-color: orange;
+        width: 200px;
+        height: 250px;
+      }
+      .d3 {
+        border: 1px solid red;
+      }
+      .d3 ul {
+        display: flex;
+        padding: 0;
+        gap: 40px;
+        list-style: none;
+        justify-content: center;
+      }
+      .d3 li {
+        background-color: yellow;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display Layout Style</h1>
+    <div class="d1">
+      <h3>Layout 1 : inilne-block 전환</h3>
+
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto tempore
+        fugit vel reiciendis asperiores architecto quasi beatae voluptatem
+        cumque voluptatibus minus alias quia, distinctio laboriosam cum neque
+        quos eius. Id?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto tempore
+        fugit vel reiciendis asperiores architecto quasi beatae voluptatem
+        cumque voluptatibus minus alias quia, distinctio laboriosam cum neque
+        quos eius. Id?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto tempore
+        fugit vel reiciendis asperiores architecto quasi beatae voluptatem
+        cumque voluptatibus minus alias quia, distinctio laboriosam cum neque
+        quos eius. Id?
+      </p>
+    </div>
+    <div class="d2">
+      <h3>Layout 2 : flex 적용</h3>
+      <div>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+          tempore fugit vel reiciendis asperiores architecto quasi beatae
+          voluptatem cumque voluptatibus minus alias quia, distinctio laboriosam
+          cum neque quos eius. Id?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+          tempore fugit vel reiciendis asperiores architecto quasi beatae
+          voluptatem cumque voluptatibus minus alias quia, distinctio laboriosam
+          cum neque quos eius. Id?
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+          tempore fugit vel reiciendis asperiores architecto quasi beatae
+          voluptatem cumque voluptatibus minus alias quia, distinctio laboriosam
+          cum neque quos eius. Id?
+        </p>
+      </div>
+      <h3>Layout 3 : flex 적용</h3>
+      <div class="d3">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
