@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo Position</title>
+    <style>
+      .parent {
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #ccc;
+        background-color: rgb(246, 245, 239);
+        padding: 20px;
+        position: relative;
+      }
+      .child {
+        left: 100px;
+        top: 40px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Logo Position</h1>
+    <div class="parent">
+      <img
+        src="https://www.starbucks.co.kr/common/img/common/logo.png"
+        alt=""
+      />
+      <p class="child">STARBUCKS COFFEE</p>
+    </div>
+  </body>
+</html>

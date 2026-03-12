@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      div {
+        border: 1px solid red;
+        /* padding: 10px; */
+      }
+      span {
+        padding: 10px;
+        background-color: aquamarine;
+      }
+      .d1,
+      .d2 {
+        margin: 20px;
+      }
+      .d2 {
+        overflow: hidden;
+      }
+      .d2 span {
+        margin: 30px;
+        /* inline-level : margin 적용 ❌*/
+      }
+      .padding {
+        /* border 기준 안쪽 여백*/
+        /* padding: T(top) R(ringht) B(bottom) L(left) */
+        /* padding: 10px 30px 50px 40px; */
+        /* padding: 20px 40px; T,B = 20px / R,L = 40px */
+        padding: 40px; /* 상하좌우 전부 다 40px */
+      }
+      .margin {
+        /* border 기준 바깥쪽 여백*/
+        /* margin: T(top) R(ringht) B(bottom) L(left) */
+        /* margin: 10px 30px 50px 40px; */
+        /* margin: 20px 40px; T,B = 20px / R,L = 40px */
+        margin: 40px; /*상하좌우 전부 다 40px*/
+      }
+      p,
+      h3 {
+        border: 1px solid green;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model Style :: padding, border, margin</h1>
+    <div class="d1">Box Model - Content</div>
+    <div class="d2">
+      <span>Box Model - Content(span) </span>
+    </div>
+    <div class="padding">
+      <h3>padding</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        cupiditate modi perferendis ipsum, saepe veritatis distinctio doloremque
+        quibusdam provident, quidem, error laborum officia. Tempore quas aliquam
+        voluptates vero nihil labore?
+      </p>
+    </div>
+    <div class="margin">
+      <h3>margin</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        cupiditate modi perferendis ipsum, saepe veritatis distinctio doloremque
+        quibusdam provident, quidem, error laborum officia. Tempore quas aliquam
+        voluptates vero nihil labore?
+      </p>
+    </div>
+  </body>
+</html>

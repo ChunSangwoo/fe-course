@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position-relative</title>
+    <style>
+      h1,
+      div {
+        border: 1px solid red;
+        position: relative;
+      }
+      span {
+        border: 5px solid blue;
+        position: absolute;
+        top: 100px; /* -를 주면 맨 위에가 기준이 0 이라 화면 위로 올라가서 화면상에서 안 보임.*/
+        right: 200px;
+      } /* 왼쪽 맨 구석으로 보내고 싶을 때 */
+      .p {
+        width: 600px;
+        height: 300px;
+        border: 2px solid green;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position-relative</h1>
+    <div>element 1</div>
+    <div class="p">
+      <span>element 2</span>
+    </div>
+  </body>
+</html>

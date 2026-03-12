@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Style</title>
+    <style>
+      /* .box-group {
+        float: left;
+      } */ /*의미 없음*/
+      .box-group div {
+        width: 100px;
+        height: 100px;
+        /* display: inline-block; */
+      }
+      .d1 {
+        background-color: aquamarine;
+        float: left;
+      }
+      .d2 {
+        background-color: yellow;
+        float: left;
+      }
+      .d3 {
+        background-color: plum;
+        float: left;
+      }
+      .box-group p {
+        clear: left;
+      }
+      /* d1에 플롯 설정을하고 d2는 안하고 d3에 하면 d3부터 다시 플룻 설정 d1~d3까지 계속 이저여야함 */
+
+      .img-group {
+        width: 600px;
+        height: 600px;
+        border: 1px solid #ccc;
+      }
+      .img-group img {
+        width: 100px;
+        height: 100px;
+        float: right;
+        padding: 20px;
+      }
+      p .no-float {
+        clear: both; /* 속성을 삭제 */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Float Style : block-level의 엘리먼트를 한줄로 정렬하여 배치</h1>
+    <div class="box-group">
+      <div class="d1"></div>
+      <div class="d2"></div>
+      <div class="d3"></div>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
+        perferendis ratione optio harum molestias, et enim aperiam iure fugiat
+        commodi, reprehenderit dolore non dicta porro provident corporis
+        laudantium esse atque.
+      </p>
+    </div>
+    <div class="img-group">
+      <img src="../images/img01_seo.png" alt="사람" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        eveniet pariatur culpa consequuntur nesciunt, suscipit deleniti velit
+        quis numquam atque? Nobis ipsum laborum, maxime minus dolor blanditiis
+        nulla. Quis, reiciendis.
+      </p>
+      <p class="no-float">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, ex?
+        Eaque consequuntur provident culpa. Veritatis adipisci atque ad dolor,
+        eius harum officiis necessitatibus? Praesentium deleniti magni
+        perspiciatis molestias, quis placeat.
+      </p>
+    </div>
+  </body>
+</html>

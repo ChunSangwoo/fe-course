@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background-Position</title>
+    <style>
+      .bg-wrap {
+        border: 1px solid red;
+        width: 100%;
+        height: 200px;
+        background-image: url(../images/pattern1.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%; /* 정가운데 설정 */
+        background-size: auto; /* cover : 가로, 세로 크기만큼 확대하여 맞춤 */
+      }
+      .star-bg-wrap {
+        width: 100%;
+        height: 32.4vw; /*viewport : vm = [이미지 출력 높이(px)/vm너비(가로 해상도)] * 100  */
+        /* height: 640px */
+        background-image: url(https://image.istarbucks.co.kr/upload/common/img/main/2026/2026_spring1_ph1_top_bg_260220.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%; /* =center*/
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background-Position</h1>
+    <div class="bg-wrap"></div>
+    <div class="star-bg-wrap"></div>
+  </body>
+</html>
