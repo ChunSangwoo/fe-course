@@ -1,0 +1,47 @@
+/* 서브메뉴 스타일 정의 시작 */
+.submenu {
+  /* 처음 로딩 시 숨김 상태 */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  padding: 24px 32px;
+  z-index: 100;
+  /* border: 1px solid red; */
+}
+.submenu-inner {
+  display: flex;
+  gap: 80px;
+  padding-left: 200px;
+  /* border: 1px solid yellow; */
+}
+.submenu-inner dl dt {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+.submenu-inner dd a {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+.menu-link {
+  display: block;
+  padding: 10px 15px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  /* border: 1px solid red; */
+}
+.menu-link:hover {
+  background-color: #333;
+  color: #9acd32;
+  text-decoration: underline;
+}
+.menu-item:hover .submenu {
+  display: block;
+}
+/* 서브메뉴 스타일 정의 종료 */
