@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CGV-Demo</title>
     <link rel="stylesheet" href="css/cgv.css" />
     <link rel="stylesheet" href="css/commons.css" />
   </head>
@@ -15,12 +15,20 @@
       width="100%"
       height="150px"
     ></iframe>
+
     <!-- content start -->
     <div class="content">
       <!-- 영화 예고편 : swiper -->
       <div class="content-top">
-        <div style="width: 100%; height: 400px; background-color: gray"></div>
+        <!-- <div style="width:100%; height:400px;background-color: gray;"></div> -->
+        <iframe
+          src="../javascript/15.swiper/swiper.html"
+          frameborder="0"
+          width="100%"
+          height="400px"
+        ></iframe>
       </div>
+
       <!-- 무비차트 리스트 -->
       <div class="content-moviechart">
         <div>
@@ -30,7 +38,7 @@
                 >무비차트</span
               >
               <span>&nbsp;</span>
-              <span class="content-title-style-font font-color-main"
+              <span class="content-title-style-font font-color-gray"
                 >상영예정작</span
               >
             </div>
@@ -44,7 +52,7 @@
                 <div>
                   <img
                     src="images/movie-chart1.jpg"
-                    alt="moviechart img "
+                    alt="moviechart img"
                     width="200px"
                   />
                 </div>
@@ -55,7 +63,7 @@
                 <div>
                   <img
                     src="images/movie-chart1.jpg"
-                    alt="moviechart img "
+                    alt="moviechart img"
                     width="200px"
                   />
                 </div>
@@ -66,7 +74,7 @@
                 <div>
                   <img
                     src="images/movie-chart1.jpg"
-                    alt="moviechart img "
+                    alt="moviechart img"
                     width="200px"
                   />
                 </div>
@@ -77,7 +85,7 @@
                 <div>
                   <img
                     src="images/movie-chart1.jpg"
-                    alt="moviechart img "
+                    alt="moviechart img"
                     width="200px"
                   />
                 </div>
@@ -88,7 +96,7 @@
                 <div>
                   <img
                     src="images/movie-chart1.jpg"
-                    alt="moviechart img "
+                    alt="moviechart img"
                     width="200px"
                   />
                 </div>
@@ -117,7 +125,14 @@
             </li>
             <li>
               <div>
-                <img src="images/event2.png" alt="event2 img" width="200px" />
+                <img src="images/event1.jpg" alt="event2 img" width="200px" />
+              </div>
+              <p class="event-content-title">[CGV]4월 컬처위크</p>
+              <p class="event-content-title-date">2026.04.01 ~ 2026.04.30</p>
+            </li>
+            <li>
+              <div>
+                <img src="images/event1.jpg" alt="event2 img" width="200px" />
               </div>
               <p class="event-content-title">[CGV]4월 컬처위크</p>
               <p class="event-content-title-date">2026.04.01 ~ 2026.04.30</p>
@@ -125,7 +140,9 @@
           </ul>
         </section>
         <!-- 이벤트 -->
+
         <section>
+          <!-- 특별관 -->
           <div class="content-title-style">
             <h3>특별관</h3>
             <button class="total-view-button">전체보기</button>
@@ -154,42 +171,78 @@
             </ul>
           </div>
         </section>
-        <!-- 특별관 -->
-      </div>
-      <!-- 패키지, 기프트 -->
-      <section class="package-content-list">
-        <div class="package-content-border">
-          <div>
-            <span class="package-title-font">패키지</span>
-            <span class="package-title- button">더보기</span>
-          </div>
-          <ul>
-            <li>
-              <img src="images/package.jpg" alt="package img" width="100px" />
-            </li>
-            <div>
-              <p>우리 패키지</p>
-              <p>62,000원</p>
-            </div>
-            <li>
-              <img src="images/package.jpg" alt="package img" width="100px" />
-            </li>
-            <div>
-              <p>우리 패키지</p>
-              <p>62,000원</p>
-            </div>
-            <li>
-              <img src="images/package.jpg" alt="package img" width="100px" />
-            </li>
-            <div>
-              <p>우리 패키지</p>
-              <p>62,000원</p>
-            </div>
-          </ul>
-        </div>
-      </section>
-    </div>
 
+        <!-- 패키지, 기프트 -->
+        <section class="package-content-list">
+          <div class="package-content-border">
+            <div>
+              <span class="package-title-font">패키지</span>
+              <span class="package-title-button">더보기</span>
+            </div>
+            <ul>
+              <li>
+                <img src="images/package.jpg" alt="package img" width="100px" />
+                <div>
+                  <p>우리 패키지</p>
+                  <p>62,000원</p>
+                </div>
+              </li>
+              <li>
+                <img src="images/package.jpg" alt="package img" width="100px" />
+                <div>
+                  <p>우리 패키지</p>
+                  <p>62,000원</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="package-content-border">
+            <div>
+              <span class="package-title-font">패키지</span>
+              <span class="package-title-button">더보기</span>
+            </div>
+            <ul>
+              <li>
+                <img src="images/package.jpg" alt="package img" width="100px" />
+                <div>
+                  <p>우리 패키지</p>
+                  <p>62,000원</p>
+                </div>
+              </li>
+              <li>
+                <img src="images/package.jpg" alt="package img" width="100px" />
+                <div>
+                  <p>우리 패키지</p>
+                  <p>62,000원</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="package-content-border">
+            <div>
+              <span class="package-title-font">패키지</span>
+              <span class="package-title-button">더보기</span>
+            </div>
+            <ul>
+              <li>
+                <img src="images/package.jpg" alt="package img" width="100px" />
+                <div>
+                  <p>우리 패키지</p>
+                  <p>62,000원</p>
+                </div>
+              </li>
+              <li>
+                <img src="images/package.jpg" alt="package img" width="100px" />
+                <div>
+                  <p>우리 패키지</p>
+                  <p>62,000원</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
     <!-- content end -->
 
     <!-- footer -->
@@ -197,7 +250,7 @@
       src="footer.html"
       frameborder="0"
       width="100%"
-      height="150px"
+      height="500px"
     ></iframe>
   </body>
 </html>
