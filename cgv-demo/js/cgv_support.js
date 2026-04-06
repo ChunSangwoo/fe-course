@@ -16,7 +16,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   /** 테이블 생성 함수 */
-  createTable();
+  // createTable();
+  filterMenu("all");
 }); //window event
 
 // filterMenu 함수 생성
@@ -29,45 +30,8 @@ async function filterMenu(type) {
   } else {
     filterList = await filterData(type);
   }
-  console.log("result -->", filterList);
-
-  let output = `
-        <table id='stable'>
-            <thead>
-                <tr>
-                    <th>번호</th>
-                    <th>구분</th>
-                    <th>제목</th>
-                    <th>등록일</th>
-                    <th>조회수</th>
-                </tr>
-            </thead>
-            <tbody>
-            ${filterList
-              .map(
-                (item, idx) => `
-                    <tr>
-                        <td>${idx + 1}</td>
-                        <td>${item.type}</td>
-                        <td>${item.title}</td>
-                        <td>${item.rdate}</td>
-                        <td>${item.hits}</td>
-                    </tr>
-                `,
-              )
-              .join("")}
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="5">1 2 3 4 5  >></td>
-                </tr>
-            </tfoot>
-        </table>
-    `;
-  document.querySelector("#stable")?.remove();
-  document
-    .querySelector("#before-table")
-    .insertAdjacentHTML("afterEnd", output);
+  // return filterList;
+  createTable(filterList); //맨 처음 호출되는 테이블
 }
 
 // filterData 함수 생성
@@ -83,8 +47,8 @@ async function getJson() {
   return response.json();
 }
 
-async function createTable() {
-  let list = await getJson();
+async function createTable(list) {
+  // let list = await getJson();
   // console.log('list =>', list);
   let output = `
         <table id='stable'>
@@ -119,7 +83,7 @@ async function createTable() {
             </tfoot>
         </table>
     `;
-
+  document.querySelector("#stable")?.remove();
   document
     .querySelector("#before-table")
     .insertAdjacentHTML("afterEnd", output);
