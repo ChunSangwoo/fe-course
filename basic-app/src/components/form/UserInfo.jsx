@@ -4,7 +4,7 @@
  * - 전송 버튼 클릭시 유효성 체크 진행
  */
 import { useRef, useState } from "react";
-import { validateUserInfo } from "../../utill/validate";
+import { validateUserInfo } from "../../util/validate.js";
 
 export default function UserInfo() {
   const refs = {
