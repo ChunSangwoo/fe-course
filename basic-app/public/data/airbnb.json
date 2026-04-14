@@ -1,0 +1,34 @@
+{
+  "roomList": [
+    {
+      "pk": "air_001",
+      "img": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ3MTY3NjExNzY1ODY5NTI3NA==/original/c2911951-dcc5-4c3e-9079-27f60353df13.jpeg",
+      "roomTitle": "부산의 집",
+      "roomDate": "5월 8일 ~ 10일",
+      "roomPrice": "572,000",
+      "roomRating": "5.0",
+      "isGuest": true,
+      "isLike": true
+    },
+    {
+      "pk": "air_002",
+      "img": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI0Mzg2MTU5NDI1NTI5NTEzMQ==/original/a7dfab4e-7df1-4cf3-ac8a-a9c4a500b785.jpeg?im_w=960",
+      "roomTitle": "중구의 집",
+      "roomDate": "5월 4일 ~ 10일",
+      "roomPrice": "462,000",
+      "roomRating": "4.0",
+      "isGuest": false,
+      "isLike": true
+    },
+    {
+      "pk": "air_003",
+      "img": "https://a0.muscache.com/im/pictures/hosting/Hosting-1590561470691444931/original/98b9863e-7c3d-4319-82df-1c545388b96e.jpeg?im_w=960",
+      "roomTitle": "한국의 집",
+      "roomDate": "5월 9일 ~ 14일",
+      "roomPrice": "232,000",
+      "roomRating": "5.5",
+      "isGuest": true,
+      "isLike": false
+    }
+  ]
+}

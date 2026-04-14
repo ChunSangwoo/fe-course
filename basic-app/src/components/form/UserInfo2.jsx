@@ -14,12 +14,6 @@ export default function UserInfo() {
     { label: "주소", type: "text", name: "address", isRequired: false },
     { label: "직업", type: "text", name: "job", isRequired: false },
   ];
-  // const refs = {
-  //     nameRef: useRef(null),
-  //     ageRef: useRef(null),
-  //     addressRef: useRef(null),
-  //     jobRef: useRef(null)
-  // }
   const refs = useRef({});
   const [form, setForm] = useState({ name: "", age: "", address: "", job: "" });
 
@@ -27,12 +21,8 @@ export default function UserInfo() {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-  console.log("form--> \n", form);
-  console.log("refs--> \n", refs);
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("onsubmit---> ", refs);
     if (validateUserInfo2(refs)) {
       console.log("submit => ", form);
     }
@@ -45,7 +35,7 @@ export default function UserInfo() {
         <ul>
           {forms.map((item, idx) => (
             <li key={idx}>
-              {item.isRequired && <span>✨</span>}
+              {item.isRequired && <span>✨</span>}'
               <label htmlFor="name">{item.label}</label>
               {!form?.[item.name]?.trim() && (
                 <span style={{ color: "red", fontSize: "0.6rem" }}>

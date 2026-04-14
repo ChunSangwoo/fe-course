@@ -1,32 +1,32 @@
+import { useEffect, useState } from "react";
 import AvatarList from "../avatar/AvatarList.jsx";
+import { fetchData } from "../../util/fetch.js";
 import people1 from "../../assets/people1.webp";
 import people2 from "../../assets/people2.webp";
 import people3 from "../../assets/people3.webp";
-import { useEffect, useState } from "react";
-[] = euset=cont zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-export default async function EffectFetch() {
-  // const alist = [
-  // {img: "/people1.webp", name: "James" },
-  // {img: "/people2.webp", name: "김철수"},
-  // {img: "/people3.webp", name: "최영희"},
-  // ]
-  const url = "http://localhost:5173/data/alist.json";
+export default function EffectFetch() {
+  const [data, setData] = useState([]);
+  const [count, setCount] = useState(0);
+
+  const url = "http://localhost:5173/data/avatar.json";
   useEffect(() => {
-    const data = null;
-    const fetchData = async () => {
-      //   await fetch(url)
-      //     .then((response) => response.json())
-      //     .then((jsonData) => jsonData) //fetch 타입이 Promise return
-      //     .catch((error) => console.log(error));
-
-      const response = await fetch(url);
-      const data = await response.json();
+    const loadData = async () => {
+      const jsonData = await fetchData(
+        "http://localhost:5173/data/avatar.json",
+      );
+      setData(jsonData.alist);
     };
-    fetchData();
-  });
+    loadData();
+  }, [count]);
 
-  console.log("data--->", data);
-
-  return <>{/* <AvatarList list={alist} /> */}</>;
+  return (
+    <>
+      <AvatarList list={data} />
+      <h2>{count}</h2>
+      <button type="button" onClick={() => setCount(count + 1)}>
+        증가(+)
+      </button>
+    </>
+  );
 }
