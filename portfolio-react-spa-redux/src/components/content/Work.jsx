@@ -1,17 +1,17 @@
 import React from "react";
-import { Title, SubTitle } from "../components/commons/Titles.jsx";
-import Categories from "../components/content/Categories.jsx";
-import Projects from "../components/content/Projects.jsx";
+import { Title, SubTitle } from "../commons/Titles.jsx";
+import Categories from "./Categories.jsx";
+import Projects from "./Projects.jsx";
 import { useOutletContext } from "react-router-dom";
 
 export default function Work() {
-  const { data, like, setLike } = useOutletContext();
+  const data = useOutletContext();
   return (
     <section id="work" className="section container">
       <Title title="My Work" />
       <SubTitle subTitle="Projects" />
       <Categories categories={data?.work?.categories} />
-      <Projects projects={data?.work?.projects} like={like} setLike={setLike} />
+      <Projects projects={data?.work?.projects} />
     </section>
   );
 }

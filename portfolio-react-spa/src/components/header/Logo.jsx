@@ -1,6 +1,6 @@
 import AvatarImage from "../commons/AvatarImage.jsx";
 
-export default function Logo({ img, alt, style, title }) {
+export default function Logo({ img, alt, style, title, like }) {
   return (
     <>
       <div className="header-logo">
@@ -10,7 +10,9 @@ export default function Logo({ img, alt, style, title }) {
           alt="header-logo"
           className="header-logo-img"
         /> */}
-        <h1 className="header-logo-title">{title}</h1>
+        <h1 className="header-logo-title">
+          {title}::SPA::♥({like})
+        </h1>
       </div>
     </>
   );
